@@ -2,11 +2,16 @@ import React from "react";
 
 import "./scss/main.scss";
 
-import { Hero } from "./components";
+import { Header, Hero } from "./components";
+
+import logoPhoto from "./assets/logo/logo.png";
+
+import cartPhoto from "./assets/icons/cart.png";
 
 const App: React.FC = () => {
   return (
     <div className="app">
+      <Header logo={logoPhoto} rightIcon={cartPhoto} />
       <Hero
         title="Samurai King Resting"
         about="About the Samurai King Resting"

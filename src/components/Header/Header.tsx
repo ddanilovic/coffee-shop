@@ -4,10 +4,16 @@ const Header: React.FC<HeaderProps> = (props) => {
   const { logo, rightIcon } = props;
 
   return (
-    <div className="header">
-      <div className="header_logo"></div>
-      <div className="header_icon__right"></div>
-    </div>
+    <React.Fragment>
+      <div className="header">
+        <div className="header__logo">
+          <img src={logo} alt="logo" />
+        </div>
+        <div className="header__icon_right">
+          <img src={rightIcon} alt="cart" />
+        </div>
+      </div>
+    </React.Fragment>
   );
 };
 
