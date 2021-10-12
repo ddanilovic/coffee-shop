@@ -10,20 +10,34 @@ type TShopContextProps = {
 
 
 //Components
+type ButtonProps = {
+  text: string;
+  color: string;
+  clickHandler?: () => void;
+}
+
 type HeaderProps = {
-    logo:string;
-    rightIcon:string;
-  };
+  logo:string;
+  rightIcon:string;
+};
 
-  type HeroProps = {
-    title:string
-  };
+type HeroProps = {
+  title:string;
+  category:string;
+  about: string;
+  description: string;
+  dimmentions:Dimmentions;
+  size:number;
+};
 
-  type ProductProps = {
+type Dimmentions = {
+  width: number;
+  height: number;
+}
 
+type ProductProps = {
 };
 
 type ShopProps = {
-
 };
 
