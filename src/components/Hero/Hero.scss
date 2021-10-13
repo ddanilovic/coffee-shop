@@ -22,13 +22,6 @@
     }
   }
 
-  &__photo_box {
-    & img {
-      width: 100%;
-      display: block;
-    }
-  }
-
   &__bottom_box {
     display: flex;
     justify-content: space-between;
