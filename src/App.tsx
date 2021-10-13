@@ -2,7 +2,7 @@ import React from "react";
 
 import "./scss/main.scss";
 
-import { Header, Hero } from "./components";
+import { Header, Hero, Shop } from "./components";
 
 import logoPhoto from "./assets/logo/logo.png";
 
@@ -20,6 +20,7 @@ const App: React.FC = () => {
         dimmentions={{ width: 5, height: 6 }}
         size={15000 / 1000}
       />
+      <Shop title="Photograpy" subTitle="Premium Photos" />
     </div>
   );
 };

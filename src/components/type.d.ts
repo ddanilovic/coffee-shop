@@ -39,5 +39,13 @@ type ProductProps = {
 };
 
 type ShopProps = {
+  subTitle:string;
+  title:string;
+};
+
+type FilterProps = {
+};
+
+type ProductListProps = {
 };
 

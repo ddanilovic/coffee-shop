@@ -12,7 +12,9 @@ const Hero: React.FC<HeroProps> = (props) => {
       <div className="line"></div>
       <div className="hero">
         <div className="hero__top_box">
-          <div className="hero__top_box__title">{title}</div>
+          <div className="hero__top_box__title">
+            <h2>{title}</h2>
+          </div>
           <div className="hero__top_box__button_right">
             <Button color="black" text="add to cart" />
           </div>

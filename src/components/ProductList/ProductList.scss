@@ -7,13 +7,12 @@
     justify-content: space-between;
     margin-bottom: 30px;
 
-    &__title h2 {
+    &__title {
       font-style: normal;
       font-weight: bold;
       font-size: 32px;
       line-height: 35px;
       color: $black;
-      margin-bottom: 0;
     }
     &__button_right {
       & :nth-child(1) {
