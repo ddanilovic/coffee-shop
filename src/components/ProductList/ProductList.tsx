@@ -1,11 +1,8 @@
-import React, { useContext } from "react"
+import React from "react"
 import { Product } from ".."
-import { ShopContext } from "../../context"
 
 const ProductList: React.FC<ProductListProps> = props => {
-  const { products } = useContext(ShopContext)
-
-  const mappedList = products.map((product: any) => (
+  const mappedList = props.displayProducts.map((product: any) => (
     <Product
       key={product.node.id}
       name={product.node.name}

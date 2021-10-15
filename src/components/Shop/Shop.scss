@@ -22,6 +22,21 @@
   &__main {
     display: flex;
   }
+  &__pagination {
+    display: flex;
+    justify-content: center;
+
+    & ul {
+      display: flex;
+      list-style: none;
+      cursor: pointer;
+
+      & li {
+        font-size: 30px;
+        margin-right: 15px;
+      }
+    }
+  }
 }
 
 @media (min-width: 1070px) {

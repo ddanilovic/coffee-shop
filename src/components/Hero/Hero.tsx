@@ -5,7 +5,10 @@ import heroPhoto from "../../assets/img/dog.jpg"
 import forestPhoto from "../../assets/img/forest.jpg"
 
 const Hero: React.FC<HeroProps> = props => {
-  const { title, images, category, description, dimmentions, size } = props
+  const { title, images, category, description, dimmentions, size, price } =
+    props
+
+  const cartPropsTest = { name: title, price }
 
   const mappedList = images.map((file: any) => (
     <div
@@ -25,7 +28,12 @@ const Hero: React.FC<HeroProps> = props => {
             <h2>{title}</h2>
           </div>
           <div className="hero__top_box__button_right">
-            <Button color="black" text="add to cart" />
+            <Button
+              classProp="snipcart-add-item"
+              color="black"
+              text="add to cart"
+              cartProps={cartPropsTest}
+            />
           </div>
         </div>
         <div className="hero__photo_box">
@@ -33,7 +41,12 @@ const Hero: React.FC<HeroProps> = props => {
         </div>
         <div className="hero__bottom_box">
           <div className="hero__bottom_box__button">
-            <Button color="black" text="add to cart" />
+            <Button
+              classProp="snipcart-add-item"
+              color="black"
+              text="add to cart"
+              cartProps={cartPropsTest}
+            />
           </div>
           <div className="hero__bottom_box__left">
             <h3>About the {title}</h3>

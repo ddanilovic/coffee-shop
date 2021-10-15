@@ -34,6 +34,7 @@ const App: React.FC<AppProps> = ({ data }) => {
         description={featuredDetails.description}
         dimmentions={featuredDetails.dimmentions}
         size={featuredDetails.size / 1000}
+        price={featured.price}
       />
       <Shop title="Photography" subTitle="Premium Photos" />
     </div>

@@ -12,10 +12,11 @@ type TShopContextProps = {
 
 //Short types
 type Cart = {
-  name: string;
-  category: string;
+  name?: string;
+  title?:string;
+  category?: string;
   price: number;
-  image: string;
+  image?: string;
 }
 
 //Components
@@ -39,6 +40,7 @@ type HeroProps = {
   description: string;
   dimmentions:Dimmentions;
   size:number;
+  price:number;
 };
 
 type Dimmentions = {
@@ -62,5 +64,6 @@ type FilterProps = {
 };
 
 type ProductListProps = {
+  displayProducts: []
 };
 
