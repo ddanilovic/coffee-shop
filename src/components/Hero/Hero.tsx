@@ -8,7 +8,10 @@ const Hero: React.FC<HeroProps> = props => {
   const { title, images, category, description, dimmentions, size } = props
 
   const mappedList = images.map((file: any) => (
-    <div className="hero__bottom_box__right__images__image">
+    <div
+      key={file.fixed.src}
+      className="hero__bottom_box__right__images__image"
+    >
       <img src={file.fixed.src} alt="1" />
     </div>
   ))

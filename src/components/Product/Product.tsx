@@ -11,7 +11,12 @@ const Product: React.FC<ProductProps> = props => {
           <img src={image} alt="forest" />
         </div>
         <div className="product__box_top__button">
-          <Button color="black" text="add to cart" />
+          <Button
+            classProp="snipcart-add-item"
+            color="black"
+            text="add to cart"
+            cartProps={props}
+          />
         </div>
       </div>
       <div className="product__box_bottom">

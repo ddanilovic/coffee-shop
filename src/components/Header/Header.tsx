@@ -1,7 +1,7 @@
-import React from "react";
+import React from "react"
 
-const Header: React.FC<HeaderProps> = (props) => {
-  const { logo, rightIcon } = props;
+const Header: React.FC<HeaderProps> = props => {
+  const { logo, rightIcon } = props
 
   return (
     <React.Fragment>
@@ -10,11 +10,11 @@ const Header: React.FC<HeaderProps> = (props) => {
           <img src={logo} alt="logo" />
         </div>
         <div className="header__icon_right">
-          <img src={rightIcon} alt="cart" />
+          <img className="snipcart-checkout" src={rightIcon} alt="cart" />
         </div>
       </div>
     </React.Fragment>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header

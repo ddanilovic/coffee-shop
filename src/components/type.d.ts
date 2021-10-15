@@ -10,12 +10,21 @@ type TShopContextProps = {
   children: React.ReactNode;
 }
 
+//Short types
+type Cart = {
+  name: string;
+  category: string;
+  price: number;
+  image: string;
+}
 
 //Components
 type ButtonProps = {
   text: string;
   color: string;
   clickHandler?: () => void;
+  classProp?:string
+  cartProps?:Cart
 }
 
 type HeaderProps = {
