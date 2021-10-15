@@ -2,7 +2,6 @@ import React from "react"
 
 const Button: React.FC<ButtonProps> = props => {
   const { text, color, clickHandler, classProp, cartProps } = props
-  // const { name, category, price, image } = cartProps
 
   return (
     <React.Fragment>

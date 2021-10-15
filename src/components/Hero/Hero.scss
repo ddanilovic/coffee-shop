@@ -126,13 +126,6 @@
 @media (min-width: 1070px) {
   .hero {
     &__top_box {
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      margin-bottom: 30px;
-
-      &__title h2 {
-      }
       &__button_right {
         display: inline;
 
@@ -143,79 +136,32 @@
     }
 
     &__bottom_box {
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
       margin-top: 46px;
 
       &__button {
         display: none;
       }
 
-      &__left {
-        width: 600px;
-
-        & :nth-child(1) {
-          font-style: normal;
-          font-weight: bold;
-          font-size: 22px;
-          line-height: 24px;
-          color: $black;
-        }
-        & :nth-child(2) {
-          font-style: normal;
-          font-weight: bold;
-          font-size: 22px;
-          line-height: 24px;
-          color: $text;
-        }
-        & p {
-          font-style: normal;
-          font-weight: normal;
-          font-size: 18px;
-          line-height: 150%;
-        }
-      }
       &__right {
         width: 417px;
-        display: flex;
         align-items: flex-end;
-        flex-direction: column;
 
         & h3 {
           margin: 0 0 30px;
         }
         &__images {
           width: 100%;
-          display: flex;
-          justify-content: space-between;
 
           &__image {
             width: 117px;
             height: 147px;
-
-            & img {
-              width: 100%;
-            }
           }
         }
         &__details {
-          margin-top: 54px;
-          font-style: normal;
-          font-weight: bold;
-          font-size: 22px;
-          line-height: 24px;
           text-align: right;
-          color: $black;
 
           & h4 {
-            margin-top: 7px;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 16px;
-            line-height: 17px;
             text-align: right;
-            color: $text;
           }
         }
       }

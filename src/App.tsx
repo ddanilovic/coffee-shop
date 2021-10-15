@@ -23,12 +23,13 @@ const App: React.FC<AppProps> = ({ data }) => {
   useEffect(() => {
     setProducts(data.menu.edges)
   }, [])
-
+  console.log(featured.image)
   return (
     <div className="app">
       <Header logo={logoIcon} rightIcon={cartIcon} />
       <Hero
         title={featured.name}
+        hero={featured.image}
         images={recommmended.image}
         category={featured.category}
         description={featuredDetails.description}

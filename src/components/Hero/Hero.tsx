@@ -1,12 +1,17 @@
 import React from "react"
 import Button from "../Button/Button"
 
-import heroPhoto from "../../assets/img/dog.jpg"
-import forestPhoto from "../../assets/img/forest.jpg"
-
 const Hero: React.FC<HeroProps> = props => {
-  const { title, images, category, description, dimmentions, size, price } =
-    props
+  const {
+    title,
+    images,
+    hero,
+    category,
+    description,
+    dimmentions,
+    size,
+    price,
+  } = props
 
   const cartPropsTest = { name: title, price }
 
@@ -15,7 +20,7 @@ const Hero: React.FC<HeroProps> = props => {
       key={file.fixed.src}
       className="hero__bottom_box__right__images__image"
     >
-      <img src={file.fixed.src} alt="1" />
+      <img src={file.fixed.src} alt="recommended" />
     </div>
   ))
 
@@ -37,7 +42,7 @@ const Hero: React.FC<HeroProps> = props => {
           </div>
         </div>
         <div className="hero__photo_box">
-          <img src={heroPhoto} alt="hero" />
+          <img src={hero.fluid.src} alt="hero" />
         </div>
         <div className="hero__bottom_box">
           <div className="hero__bottom_box__button">

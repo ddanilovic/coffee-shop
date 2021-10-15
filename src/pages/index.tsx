@@ -46,7 +46,7 @@ export const query = graphql`
           price
           featured
           image {
-            fixed {
+            fluid {
               src
             }
           }

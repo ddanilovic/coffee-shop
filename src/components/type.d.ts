@@ -36,6 +36,7 @@ type HeaderProps = {
 type HeroProps = {
   title:string;
   category:string;
+  hero:any;
   images: [];
   description: string;
   dimmentions:Dimmentions;
