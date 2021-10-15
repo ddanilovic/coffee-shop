@@ -6,10 +6,9 @@ import { GlobalContextProvider } from "../context"
 import { graphql } from "gatsby"
 
 const IndexPage = ({ data }: any) => {
-  console.log(data.featured)
   return (
     <GlobalContextProvider>
-      <App data={data.menu.edges} />
+      <App data={data} />
     </GlobalContextProvider>
   )
 }
@@ -51,7 +50,7 @@ export const query = graphql`
               src
             }
           }
-          childContentfulFeaturedItemDetailsJsonNode {
+          details: childContentfulFeaturedItemDetailsJsonNode {
             description
             dimmentions {
               height

@@ -5,9 +5,9 @@ import { ShopContext } from "../../context"
 const ProductList: React.FC<ProductListProps> = props => {
   const { products } = useContext(ShopContext)
 
-  console.log(products)
   const mappedList = products.map((product: any) => (
     <Product
+      key={product.node.id}
       name={product.node.name}
       category={product.node.category}
       price={product.node.price}

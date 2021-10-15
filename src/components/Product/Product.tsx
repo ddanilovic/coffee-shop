@@ -1,5 +1,4 @@
 import React from "react"
-import forest from "../../assets/img/forest.jpg"
 import Button from "../Button/Button"
 
 const Product: React.FC<ProductProps> = props => {
