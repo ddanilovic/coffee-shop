@@ -1,14 +1,25 @@
-import React from "react";
+import React, { useContext, useEffect } from "react"
 
-import "./scss/main.scss";
+import "./scss/main.scss"
+import { ShopContext } from "./context"
 
-import { Header, Hero, Shop } from "./components";
+import { Header, Hero, Shop } from "./components"
 
-import logoPhoto from "./assets/logo/logo.png";
+import logoPhoto from "./assets/logo/logo.png"
 
-import cartPhoto from "./assets/icons/cart.png";
+import cartPhoto from "./assets/icons/cart.png"
 
-const App: React.FC = () => {
+type AppProps = {
+  data: any
+}
+
+const App: React.FC<AppProps> = ({ data }) => {
+  const { products, setProducts } = useContext(ShopContext)
+
+  useEffect(() => {
+    setProducts(data)
+  }, [])
+
   return (
     <div className="app">
       <Header logo={logoPhoto} rightIcon={cartPhoto} />
@@ -22,7 +33,7 @@ const App: React.FC = () => {
       />
       <Shop title="Photograpy" subTitle="Premium Photos" />
     </div>
-  );
-};
+  )
+}
 
-export default App;
+export default App

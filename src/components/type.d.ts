@@ -3,6 +3,8 @@ type GlobalContextProps = {
   children: React.ReactNode;
 }
 type TShopContext = {
+  products: any;
+  setProducts: (data: any) => void;
 }
 type TShopContextProps = {
   children: React.ReactNode;
@@ -36,6 +38,10 @@ type Dimmentions = {
 }
 
 type ProductProps = {
+  name:string;
+  category:string;
+  price:number;
+  image:any;
 };
 
 type ShopProps = {
