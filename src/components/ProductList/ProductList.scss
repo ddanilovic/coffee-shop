@@ -1,10 +1,15 @@
 .product_list {
   max-width: 940px;
-
-  // width: 80vw;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   grid-row-gap: 2rem;
   grid-column-gap: 50px;
+}
+
+@media (min-width: 1070px) {
+  .product_list {
+    justify-content: space-between;
+  }
 }

@@ -3,7 +3,7 @@ import { Product } from ".."
 import { ShopContext } from "../../context"
 
 const ProductList: React.FC<ProductListProps> = props => {
-  const { products, setProducts } = useContext(ShopContext)
+  const { products } = useContext(ShopContext)
 
   console.log(products)
   const mappedList = products.map((product: any) => (

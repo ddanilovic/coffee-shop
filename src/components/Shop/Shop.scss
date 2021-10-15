@@ -4,10 +4,11 @@
 
   &__title {
     display: flex;
+    margin-bottom: 60px;
 
     & h2 {
       font-style: normal;
-      font-size: 30px;
+      font-size: 18px;
       line-height: 35px;
       margin-bottom: 0;
       font-weight: bold;
@@ -20,5 +21,15 @@
   }
   &__main {
     display: flex;
+  }
+}
+
+@media (min-width: 1070px) {
+  .shop {
+    &__title {
+      & h2 {
+        font-size: 30px;
+      }
+    }
   }
 }

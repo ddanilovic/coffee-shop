@@ -1,7 +1,7 @@
 .product {
   width: 280px;
   height: 500px;
-  background-color: orange;
+  background-color: $white;
 
   &__box_top {
     height: 360px;
@@ -29,7 +29,21 @@
     & h3,
     h5,
     h4 {
-      margin-bottom: 0;
+      margin: 10px 0;
+      color: $text;
+    }
+
+    & h3 {
+      color: $black;
+      font-size: 30px;
+    }
+
+    & h4 {
+      font-size: 25px;
+    }
+
+    & h5 {
+      font-size: 20px;
     }
   }
 }

@@ -1,20 +1,4 @@
-import React from "react"
-
-import App from "../App"
-import { GlobalContextProvider } from "../context"
-
 import { graphql } from "gatsby"
-
-const IndexPage = ({ data }: any) => {
-  console.log(data.featured)
-  return (
-    <GlobalContextProvider>
-      <App data={data.menu.edges} />
-    </GlobalContextProvider>
-  )
-}
-
-export default IndexPage
 
 export const query = graphql`
   {

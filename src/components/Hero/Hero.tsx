@@ -1,15 +1,15 @@
-import React from "react";
-import Button from "../Button/Button";
+import React from "react"
+import Button from "../Button/Button"
 
-import heroPhoto from "../../assets/img/dog.jpg";
-import forestPhoto from "../../assets/img/forest.jpg";
+import heroPhoto from "../../assets/img/dog.jpg"
+import forestPhoto from "../../assets/img/forest.jpg"
 
-const Hero: React.FC<HeroProps> = (props) => {
-  const { title, about, category, description, dimmentions, size } = props;
+const Hero: React.FC<HeroProps> = props => {
+  const { title, about, category, description, dimmentions, size } = props
 
   return (
     <React.Fragment>
-      <div className="line"></div>
+      <div className="line_top"></div>
       <div className="hero">
         <div className="hero__top_box">
           <div className="hero__top_box__title">
@@ -23,6 +23,9 @@ const Hero: React.FC<HeroProps> = (props) => {
           <img src={heroPhoto} alt="hero" />
         </div>
         <div className="hero__bottom_box">
+          <div className="hero__bottom_box__button">
+            <Button color="black" text="add to cart" />
+          </div>
           <div className="hero__bottom_box__left">
             <h3>{about}</h3>
             <h3>{category}</h3>
@@ -51,9 +54,9 @@ const Hero: React.FC<HeroProps> = (props) => {
           </div>
         </div>
       </div>
-      <div className="line"></div>
+      <div className="line_bottom"></div>
     </React.Fragment>
-  );
-};
+  )
+}
 
-export default Hero;
+export default Hero
