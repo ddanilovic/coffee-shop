@@ -5,7 +5,7 @@
   </a>
 </p>
 <h1 align="center">
-  GatsbyJS
+  Bejamas Art Shop
 </h1>
 
 Technologies used:
