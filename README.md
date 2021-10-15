@@ -9,13 +9,13 @@
 </h1>
 
 Technologies used:
--TypeScript
--ReactJS
--ContextAPI
--GatsbyJS
--Contentful
--SCSS
--SnipCart
+- **TypeScript**
+- **ReactJS**
+- **ContextAPI**
+- **GatsbyJS**
+- **Contentful**
+- **SCSS**
+- **SnipCart**
 
 ## 🚀 Quick start
 
